@@ -1,11 +1,16 @@
 <template>
-  <h1>Hello World!</h1>
+  <AppHeader />
+  <div class="w-full flex">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-  export default {
-    name: "App",
+import AppHeader from './components/AppHeader.vue'
 
+export default {
+  name: "App",
+  components: { AppHeader },
     
-  }
+}
 </script>
